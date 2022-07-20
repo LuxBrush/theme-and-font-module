@@ -8,4 +8,4 @@ I was having trouble keeping track of what was where in my css files. I decided 
 
 These tools work well for me, so I made this module. I hope that you find this module useful.
 You can find a demo for this module here.
-[https://github.com/LuxBrush/theme-and-font-module-website](https://github.com/LuxBrush/theme-and-font-module-website "https://github.com/LuxBrush/theme-and-font-module-website")
+[https://luxbrush.github.io/theme-and-font-module-website/](https://luxbrush.github.io/theme-and-font-module-website/ "https://luxbrush.github.io/theme-and-font-module-website/")

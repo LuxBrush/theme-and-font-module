@@ -1,0 +1,25 @@
+@use 'components' as *;
+
+@mixin setStyleSheet() {
+    :root {
+        font-size: setStyle('font', $rootFontSize);
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: setStyle('main', border-box);
+    }
+
+    body {
+        display: setStyle('main', grid);
+        place-items: setStyle('main', center);
+        margin: setStyle('main', 0px);
+        padding: setStyle('main', 0px);
+        height: setStyle('main', 100%);
+        color: setStyle('theme', $onBackground);
+        background-color: setStyle('theme', $background);
+
+        @include setFont($fontMap, normal, normal, null);
+    }
+}

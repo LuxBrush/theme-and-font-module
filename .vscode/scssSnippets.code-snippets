@@ -1,0 +1,123 @@
+{
+	"scssImport": {
+		"scope": "scss",
+		"prefix": "import",
+		"body": [
+			"@import \"$1\";"
+		],
+		"description": "Import in Scss"
+	},
+	"scssUse": {
+		"scope": "scss",
+		"prefix": "use",
+		"body": [
+			"@use '$1';"
+		],
+		"description": "Use in Scss"
+	},
+	
+	"scssForward": {
+		"scope": "scss",
+		"prefix": "forward",
+		"body": [
+			"@forward '$1';"
+		],
+		"description": "Forward in Scss"
+	},
+	"scssMixin": {
+		"scope": "scss",
+		"prefix": "mixin",
+		"body": [
+			"@mixin ${1:name}($2) {$3}"
+		],
+		"description": "Mixin in Scss"
+	},
+	"scssFun": {
+		"scope": "scss",
+		"prefix": "function",
+		"body": [
+			"@function ${1:name}($2) {$3}"
+		],
+		"description": "A Function in Scss"
+	},
+	"scssIf": {
+		"scope": "scss",
+		"prefix": "if",
+		"body": [
+			"@if ${1:condition} {$2}"
+		],
+		"description": "If in Scss"
+	},
+	"scssElseIf": {
+		"scope": "scss",
+		"prefix": "else if",
+		"body": [
+			"@else if ${1:condition} {$2}"
+		],
+		"description": "Else if in Scss"
+	},
+	"scssElse": {
+		"scope": "scss",
+		"prefix": "else",
+		"body": [
+			"@else {$1}"
+		],
+		"description": "Else in Scss"
+	},
+	"scssReturn": {
+		"scope": "scss",
+		"prefix": "return",
+		"body": [
+			"@return $1;"
+		],
+		"description": "Return in Scss"
+	},
+	"scssSetStyle": {
+		"scope": "scss",
+		"prefix": "setStyle",
+		"body": [
+			"setStyle('${2|main,theme,font|}', ${TM_SELECTED_TEXT:${1}})"
+		],
+		"description": "Place setStyle() function"
+	},
+	"scssSetFont": {
+		"scope": "scss",
+		"prefix": "setFont",
+		"body": [
+			"@include setFont(${1:fonts or null}, ${2:font weight or null}, ${3:font style or null}, ${4:font size or null});"
+		],
+		"description": "Place setFont() function"
+	},
+	"scssToString": {
+		"scope": "scss",
+		"prefix": "ToString",
+		"body": [
+			"#{${TM_SELECTED_TEXT:${1}}}"
+		],
+		"description": "Puts selected text in a string"
+	},
+	"scssInclude": {
+		"scope": "scss",
+		"prefix": "include",
+		"body": [
+			"@include $1;"
+		],
+		"description": "include in Scss"
+	},
+	"scssDebug": {
+		"scope": "scss",
+		"prefix": "debug",
+		"body": [
+			"@debug $1;"
+		],
+		"description": "Debug in Scss"
+	},
+	"scssVar": {
+		"scope": "scss",
+		"prefix": "var",
+		"body": [
+			"\\$${TM_SELECTED_TEXT:${1}}:$2;"
+		],
+		"description": "Set a new variable in scss."
+	}
+}
